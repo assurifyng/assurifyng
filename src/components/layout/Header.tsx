@@ -12,7 +12,7 @@ const Header = () => {
 
 	return (
 		<header className="w-full fixed z-50 bg-white">
-			<div className="flex items-center bg-white px-5 md:px-10 py-3 border-b border-gray-200 justify-between">
+			<div className="flex items-center bg-white px-10 md:px-20 py-3 border-b border-gray-200 justify-between">
 				<Link
 					href="/"
 					className="flex items-center gap-2 hover:opacity-80 active:scale-95 transition-transform"
@@ -49,7 +49,7 @@ const Header = () => {
 						))}
 					</nav>
 
-					<Button className="bg-assurify-orange hover:bg-assurify-orange/90 text-white font-bold px-6 h-10 cursor-pointer shadow-md transition-all active:scale-95">
+					<Button className="bg-assurify-orange hover:bg-assurify-orange/90 text-white font-bold px-6 h-12 cursor-pointer shadow-md transition-all active:scale-95">
 						Get Started
 					</Button>
 				</div>
