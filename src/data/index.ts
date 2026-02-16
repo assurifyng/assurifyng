@@ -2,9 +2,9 @@ import { CyberSecurity, DevOps, QAEngineering, WebDevelopment } from "@/assets";
 
 export const headerLinks = [
 	{ href: "/", label: "Home" },
-	{ href: "/about-us", label: "About Us" },
+	{ href: "/#about-us", label: "About Us" },
 	{ href: "/#courses", label: "Courses" },
-	{ href: "/#contact", label: "Contact Us" },
+	{ href: "/#contact-us", label: "Contact Us" },
 ];
 
 export const COURSE_DATA = [
@@ -17,7 +17,7 @@ export const COURSE_DATA = [
 		isComingSoon: false,
 	},
 	{
-		title: "QA Engineering",
+		title: "Software Testing",
 		description:
 			"Learn automated and manual testing to ensure software quality and reliability in production.",
 		image: QAEngineering,

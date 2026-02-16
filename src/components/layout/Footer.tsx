@@ -16,29 +16,32 @@ const Footer = () => {
 		<div className="w-full px-10 md:px-20 pt-10 pb-5 bg-[#FFF8F6]">
 			<div className="grid grid-cols-1 md:grid-cols-4 gap-5 md:gap-10">
 				<div className="">
-					<Image
-						src={BrandLogo}
-						width={100}
-						height={100}
-						alt="assurify-logo"
-					/>
+					<div className="flex items-center gap-2 text-assurify-orange">
+						<Image
+							src={BrandLogo}
+							width={50}
+							height={50}
+							alt="assurify-logo"
+						/>
+						<p className="text-2xl font-bold">GoAssurify</p>
+					</div>
 
-					<div className="mt-3 flex flex-col gap-4">
+					<div className="mt-10 flex flex-col gap-4">
 						<div className="flex items-center gap-3">
 							<PhoneIcon />
-							<p>+234 916 987 0900</p>
+							<p>0705 144 1713</p>
 						</div>
 						<div className="flex items-center gap-3">
 							<WhatsappIcon />
-							<p>+234 916 987 0900</p>
+							<p>0810 165 4620</p>
 						</div>
 						<div className="flex items-center gap-3">
 							<MailIcon />
-							<p>info@sartorialstore.ng</p>
+							<p>assurifyng@gmail.com</p>
 						</div>
 						<div className="flex items-center gap-3">
 							<LocationIcon />
-							<p>Lagos, Nigeria</p>
+							<p>Yaba, Lagos, Nigeria</p>
 						</div>
 					</div>
 				</div>
@@ -46,22 +49,21 @@ const Footer = () => {
 					<p className="font-semibold text-2xl">Help</p>
 
 					<div className="mt-3  flex flex-col gap-4">
-						<Link href={"/contact-us"}>Contact Us</Link>
-						<Link href={"/shipping-details"}>Shipping details</Link>
-						<Link href={"/refund-and-returns"}>
-							Refund & Returns
+						<Link href={"/#contact-us"} className="hover:underline">
+							Contact Us
+						</Link>
+						<Link href={"/#faqs"} className="hover:underline">
+							FAQs
 						</Link>
 					</div>
 				</div>
 				<div className="mt-4 md:mt-8 ">
-					<p className="font-semibold text-2xl">Our Company</p>
+					<p className="font-semibold text-2xl">Our Courses</p>
 
 					<div className="mt-3  flex flex-col gap-4">
-						<Link href={"/"}>About Us</Link>
-						<Link href={"/faqs"}>FAQs</Link>
-						<Link href={"/terms-and-condition"}>
-							Terms & Conditions
-						</Link>
+						<Link href={"/"}>Cyber Security</Link>
+						<Link href={"/"}>Software Testing</Link>
+						<Link href={"/"}>Web Development</Link>
 					</div>
 				</div>
 				<div className="mt-4 md:mt-8">

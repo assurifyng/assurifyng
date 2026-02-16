@@ -13,6 +13,10 @@ import FacebookIcon from "./icons/FacebookIcon";
 import IgIcon from "./icons/IgIcon";
 import TikTokIcon from "./icons/TikTokIcon";
 import PhoneIcon from "./icons/PhoneIcon";
+import ContactMail from "./icons/EmailAddressIcon";
+import ContactPhone from "./icons/ContactPhoneIcon";
+import ContactAddress from "./icons/ContactAddressIcon";
+import AboutUsImage from "./images/about-us.png";
 
 export {
 	BrandLogo,
@@ -30,4 +34,8 @@ export {
 	TikTokIcon,
 	WhatsappIcon,
 	PhoneIcon,
+	ContactMail,
+	ContactPhone,
+	ContactAddress,
+	AboutUsImage,
 };
