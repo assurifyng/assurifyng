@@ -41,25 +41,26 @@ const AboutUs = () => {
 				<h1 className="text-3xl md:text-5xl text-assurify-orange font-bold">
 					About Us
 				</h1>
+
 				<div className="">
-					<p className="mt-3 md:mt-4 text-[12px] md:text-[14px] text-customDarkGrey">
-						Brightflare Technologies has evolved into a dynamic
-						educational platform dedicated to transforming lives
-						through technology.
+					<p className="mt-3 md:mt-4 text-[12px] md:text-[14px]">
+						GoAssurify has evolved into a premier educational
+						powerhouse dedicated to bridging the gap between
+						ambition and technical mastery.
 						<br />
-						<span className="bg-assurify-orange text-white">
-							Our flagship initiative, Brightflare Tech Academy,
-							is committed to empowering individuals at all skill
-							levels—whether they are stepping into tech for the
-							first time or seeking advanced expertise.
+						<span className="bg-assurify-orange text-white px-1">
+							Our mission is to empower individuals at every stage
+							of their journey—from tech novices to seasoned
+							professionals looking to specialize in Cyber
+							Security, Software Testing, and Web Development.
 						</span>
 					</p>
 					<br />
-					<p className="text-[12px] md:text-[14px] text-customDarkGrey">
-						At Brightflare Tech Academy, we believe in breaking down
-						barriers to entry in the tech industry. We offer a
-						diverse range of programs designed to meet different
-						learning needs
+					<p className="text-[12px] md:text-[14px]">
+						At GoAssurify, we don’t just teach code; we build
+						careers. By breaking down industry barriers, we provide
+						high-impact training programs meticulously designed to
+						meet the demands of the modern digital landscape.
 					</p>
 				</div>
 			</motion.div>

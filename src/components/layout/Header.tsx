@@ -6,13 +6,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
+import MobileMenu from "../common/MobileMenu";
 
 const Header = () => {
 	const pathname = usePathname();
 
 	return (
 		<header className="w-full fixed z-50 bg-white">
-			<div className="flex items-center bg-white px-10 md:px-20 py-3 border-b border-gray-200 justify-between">
+			<div className="flex items-center bg-white px-6 md:px-20 py-3 border-b border-gray-200 justify-between">
 				<Link
 					href="/"
 					className="flex items-center gap-2 hover:opacity-80 active:scale-95 transition-transform"
@@ -53,6 +54,7 @@ const Header = () => {
 						Get Started
 					</Button>
 				</div>
+				<MobileMenu />
 			</div>
 		</header>
 	);
