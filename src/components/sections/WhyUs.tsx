@@ -19,9 +19,9 @@ const WhyUs = () => {
 			bgColor: "bg-[#EEEEFD]",
 		},
 		{
-			title: "Supportive design community for networking.",
+			title: "A Supportive Tech Community Built for Growth.",
 			description:
-				"A fun & interactive community of developers, designers and tech veterans from all over the world who are committed to helping each other grow.",
+				"Join a collaborative network of cybersecurity professionals, QA engineers, and web developers committed to sharing knowledge, solving real-world challenges, and helping one another grow in today’s fast-evolving tech industry.",
 			icon: <Users className="text-[#D19D4D] w-6 h-6" />,
 			bgColor: "bg-[#FDF7EE]",
 		},

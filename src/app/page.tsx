@@ -12,8 +12,8 @@ export default function Home() {
 		<main className="h-auto w-full flex flex-col">
 			<Header />
 			<Hero />
-			<AboutUs />
 			<Courses />
+			<AboutUs />
 			<WhyUs />
 			<FAQs />
 			<ContactUs />

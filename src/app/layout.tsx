@@ -10,9 +10,9 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-	title: "GoAssurify | Transition Into Tech in 3 Months",
+	title: "GoAssurify | Start your Career Here",
 	description:
-		"Master the skills you need to start a successful global tech career in just 3 months.",
+		"Gain real-world, in-demand skills and step confidently into the global tech industry.",
 	openGraph: {
 		title: "GoAssurify",
 		description: "Your global tech journey begins here.",

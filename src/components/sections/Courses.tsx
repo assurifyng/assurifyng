@@ -15,15 +15,15 @@ const Courses = () => {
 	return (
 		<section
 			id="courses"
-			className="w-full bg-[#FFF8F6] px-2 md:px-20 py-10 md:py-20 overflow-hidden"
+			className="w-full bg-white px-2 md:px-20 py-10 md:py-20 overflow-hidden"
 		>
 			<div className="container mx-auto px-6 md:px-0">
 				<div className="space-y-2 mb-5 md:mb-8">
 					<p className="text-assurify-orange text-sm md:text-base font-semibold tracking-wider">
-						TECH COURSES
+						TECH COURSES & SERVICES
 					</p>
-					<h2 className="text-3xl md:text-4xl font-bold text-[#333]">
-						Our Popular Career Courses
+					<h2 className="text-2xl md:text-4xl font-bold text-[#333]">
+						Our Popular Career Courses and Services
 					</h2>
 				</div>
 
