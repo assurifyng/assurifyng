@@ -136,13 +136,13 @@ export default function ContactUs() {
 						<div className="flex items-center gap-3">
 							<ContactPhone />
 							<p className="text-sm md:text-lg">
-								0705 144 1713, 0810 165 4620
+								0705 144 1713, 0817 344 8113
 							</p>
 						</div>
 						<div className="flex items-center gap-3">
 							<ContactAddress />
 							<p className="text-sm md:text-lg">
-								Yaba, Lagos, Nigeria.
+								Ikeja, Lagos, Nigeria.
 							</p>
 						</div>
 					</div>

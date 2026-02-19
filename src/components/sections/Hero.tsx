@@ -1,5 +1,5 @@
 "use client";
-import { Hero1, Hero2 } from "@/assets";
+import { Avatar, Hero1, Hero2 } from "@/assets";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { motion, Variants } from "framer-motion";
@@ -44,10 +44,13 @@ const Hero = () => {
 					>
 						<span className="flex -space-x-2">
 							{[1, 2, 3].map((i) => (
-								<div
-									key={i}
-									className="w-6 h-6 rounded-full border-2 border-white bg-gray-200"
-								/>
+								<div key={i} className="w-6 h-6 rounded-full">
+									<Image
+										src={Avatar}
+										alt="User"
+										className="w-full h-full object-cover rounded-full"
+									/>
+								</div>
 							))}
 						</span>
 						<p className="text-xs md:text-sm font-medium text-gray-700">

@@ -1,4 +1,11 @@
-import { CyberSecurity, DevOps, QAEngineering, WebDevelopment } from "@/assets";
+import {
+	CyberSecurity,
+	DevOps,
+	HR,
+	Outsourcing,
+	QAEngineering,
+	WebDevelopment,
+} from "@/assets";
 
 export const headerLinks = [
 	{ href: "/", label: "Home" },
@@ -17,11 +24,27 @@ export const COURSE_DATA = [
 		isComingSoon: false,
 	},
 	{
-		title: "Software Testing",
+		title: "Software QA / Testing",
 		description:
 			"Learn automated and manual testing to ensure software quality and reliability in production.",
 		image: QAEngineering,
 		tag: "Testing",
+		isComingSoon: false,
+	},
+	{
+		title: "QA & Cyber Security Consulting",
+		description:
+			"Ensure robust digital ecosystems through comprehensive manual and automated testing paired with proactive threat assessment and security audits.",
+		image: Outsourcing,
+		tag: "Consulting",
+		isComingSoon: false,
+	},
+	{
+		title: "Talent Outsourcing",
+		description:
+			"Bridge the skill gap by connecting your projects with vetted, high-performing technical talent tailored to your specific industry needs and company culture.",
+		image: HR,
+		tag: "Outsourcing",
 		isComingSoon: false,
 	},
 	{

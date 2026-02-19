@@ -17,6 +17,9 @@ import ContactMail from "./icons/EmailAddressIcon";
 import ContactPhone from "./icons/ContactPhoneIcon";
 import ContactAddress from "./icons/ContactAddressIcon";
 import AboutUsImage from "./images/about-us.png";
+import Avatar from "./images/avatar.png";
+import HR from "./images/hr.png";
+import Outsourcing from "./images/outsourcing.png";
 
 export {
 	BrandLogo,
@@ -38,4 +41,7 @@ export {
 	ContactPhone,
 	ContactAddress,
 	AboutUsImage,
+	Avatar,
+	HR,
+	Outsourcing,
 };
