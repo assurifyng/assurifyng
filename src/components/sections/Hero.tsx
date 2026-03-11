@@ -1,9 +1,25 @@
 "use client";
-import { Avatar, Hero1, Hero2 } from "@/assets";
+import { Avatar1, Avatar2, Avatar3, Hero1, Hero2 } from "@/assets";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { motion, Variants } from "framer-motion";
 import { Star } from "lucide-react";
+import Link from "next/link";
+
+const avatars = [
+	{
+		id: 1,
+		avatar: Avatar1,
+	},
+	{
+		id: 2,
+		avatar: Avatar2,
+	},
+	{
+		id: 3,
+		avatar: Avatar3,
+	},
+];
 
 const Hero = () => {
 	const containerVariants: Variants = {
@@ -43,18 +59,18 @@ const Hero = () => {
 						className="hidden md:inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-sm border border-orange-100"
 					>
 						<span className="flex -space-x-2">
-							{[1, 2, 3].map((i) => (
-								<div key={i} className="w-6 h-6 rounded-full">
+							{avatars.map(({ id, avatar }) => (
+								<div key={id} className="w-6 h-6 rounded-full">
 									<Image
-										src={Avatar}
-										alt="User"
+										src={avatar}
+										alt="avatars"
 										className="w-full h-full object-cover rounded-full"
 									/>
 								</div>
 							))}
 						</span>
 						<p className="text-xs md:text-sm font-medium text-gray-700">
-							Joined by 1,200+ students this month
+							Joined by 500+ students this month
 						</p>
 					</motion.div>
 
@@ -100,7 +116,12 @@ const Hero = () => {
 							size="lg"
 							className="cursor-pointer bg-assurify-orange hover:bg-[#a33d36] text-white px-10 py-7 text-lg rounded-md shadow-lg shadow-orange-900/20 transition-all hover:scale-105 active:scale-95"
 						>
-							Enroll Now
+							<Link
+								href="https://docs.google.com/forms/d/e/1FAIpQLSfmQ47Nuzoti7Mg1vjFIyqf5P5q1zWCpKrGjdtnYrHtdZckaQ/viewform"
+								target="_blank"
+							>
+								Enroll Now
+							</Link>
 						</Button>
 
 						<div className="flex flex-col items-center gap-2 md:gap-1 md:items-start">
@@ -131,7 +152,7 @@ const Hero = () => {
 							NEXT COHORT
 						</p>
 						<p className="text-sm font-bold text-gray-800">
-							2nd March, 2026
+							1st April, 2026
 						</p>
 					</motion.div>
 

@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { ReactNode } from "react";
 
 type FAQProps = {
@@ -14,9 +15,13 @@ const faqList: FAQProps[] = [
 		answer: (
 			<>
 				Applying is simple!{" "}
-				<a href="/" target="_blank" className="text-blue-700 underline">
+				<Link
+					href="https://docs.google.com/forms/d/e/1FAIpQLSfmQ47Nuzoti7Mg1vjFIyqf5P5q1zWCpKrGjdtnYrHtdZckaQ/viewform"
+					target="_blank"
+					className="text-blue-700 underline"
+				>
 					Click here
-				</a>{" "}
+				</Link>{" "}
 				to submit your application online. Our team will review your
 				submission and get back to you promptly with next steps. Be sure
 				to provide accurate contact information so we can guide you

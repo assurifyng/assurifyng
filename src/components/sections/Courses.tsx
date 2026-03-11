@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/carousel";
 import { Badge } from "@/components/ui/badge";
 import { COURSE_DATA } from "@/data";
+import Link from "next/link";
 
 const Courses = () => {
 	return (
@@ -71,9 +72,14 @@ const Courses = () => {
 													: "bg-assurify-orange text-white hover:bg-assurify-orange/90 active:scale-95"
 											}`}
 										>
-											{course.isComingSoon
-												? "Coming Soon"
-												: "Enroll Now"}
+											<Link
+												href="https://docs.google.com/forms/d/e/1FAIpQLSfmQ47Nuzoti7Mg1vjFIyqf5P5q1zWCpKrGjdtnYrHtdZckaQ/viewform"
+												target="_blank"
+											>
+												{course.isComingSoon
+													? "Coming Soon"
+													: "Enroll Now"}
+											</Link>
 										</Button>
 									</div>
 								</div>

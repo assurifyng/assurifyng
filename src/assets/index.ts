@@ -18,6 +18,9 @@ import ContactPhone from "./icons/ContactPhoneIcon";
 import ContactAddress from "./icons/ContactAddressIcon";
 import AboutUsImage from "./images/about-us.png";
 import Avatar from "./images/avatar.png";
+import Avatar1 from "./images/avatar01.png";
+import Avatar2 from "./images/avatar02.png";
+import Avatar3 from "./images/avatar03.png";
 import HR from "./images/hr.png";
 import Outsourcing from "./images/outsourcing.png";
 
@@ -42,6 +45,9 @@ export {
 	ContactAddress,
 	AboutUsImage,
 	Avatar,
+	Avatar1,
+	Avatar2,
+	Avatar3,
 	HR,
 	Outsourcing,
 };
