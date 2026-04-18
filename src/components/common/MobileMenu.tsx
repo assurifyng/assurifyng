@@ -91,7 +91,12 @@ const MobileMenu = () => {
 					</nav>
 					<div className="px-4">
 						<Button className="bg-assurify-orange hover:bg-assurify-orange/90 text-white font-bold px-6 h-10 md:h-12 cursor-pointer shadow-md transition-all active:scale-95">
-							Get Started
+							<Link
+								href="https://docs.google.com/forms/d/e/1FAIpQLSfmQ47Nuzoti7Mg1vjFIyqf5P5q1zWCpKrGjdtnYrHtdZckaQ/viewform"
+								target="_blank"
+							>
+								Get Started
+							</Link>
 						</Button>
 					</div>
 
