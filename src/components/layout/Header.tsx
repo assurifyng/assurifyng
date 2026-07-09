@@ -31,7 +31,10 @@ const Header = () => {
 				</Link>
 
 				<div className="hidden md:flex items-center gap-20">
-					<nav className="flex items-center gap-8">
+					<nav
+						aria-label="Primary"
+						className="flex items-center gap-8"
+					>
 						{headerLinks.map(({ href, label }) => (
 							<Link
 								key={href}

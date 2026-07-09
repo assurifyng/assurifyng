@@ -12,7 +12,7 @@ import Link from "next/link";
 
 const Footer = () => {
 	return (
-		<div className="w-full px-10 md:px-20 pt-10 pb-5 bg-[#FFF8F6]">
+		<footer className="w-full px-10 md:px-20 pt-10 pb-5 bg-[#FFF8F6]">
 			<div className="grid grid-cols-1 md:grid-cols-4 gap-5 md:gap-10">
 				<div className="">
 					<div className="flex items-center gap-2 text-assurify-orange">
@@ -109,7 +109,7 @@ const Footer = () => {
 				<span className="bg-gray-300 h-px w-full"></span>
 				<p className="text-sm">© 2026 Assurify. All rights reserved.</p>
 			</div>
-		</div>
+		</footer>
 	);
 };
 

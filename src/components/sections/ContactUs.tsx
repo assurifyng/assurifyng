@@ -54,9 +54,9 @@ export default function ContactUs() {
 						onSubmit={handleSubmit(onSubmit)}
 						className="h-auto bg-white rounded-xl md:px-14 md:py-10"
 					>
-						<h1 className="text-[40px] md:text-[50px] text-assurify-orange font-semibold">
+						<h2 className="text-[40px] md:text-[50px] text-assurify-orange font-semibold">
 							Contact Us
-						</h1>
+						</h2>
 
 						<div className="mt-5">
 							<input

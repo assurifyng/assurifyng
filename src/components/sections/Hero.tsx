@@ -63,7 +63,7 @@ const Hero = () => {
 								<div key={id} className="w-6 h-6 rounded-full">
 									<Image
 										src={avatar}
-										alt="avatars"
+										alt="GoAssurify student"
 										className="w-full h-full object-cover rounded-full"
 									/>
 								</div>
@@ -176,7 +176,7 @@ const Hero = () => {
 					>
 						<Image
 							src={Hero2}
-							alt="Tech Student"
+							alt="Student learning cybersecurity at GoAssurify"
 							fill
 							className="object-cover"
 						/>
@@ -202,7 +202,7 @@ const Hero = () => {
 					>
 						<Image
 							src={Hero1}
-							alt="Learning Tech"
+							alt="GoAssurify students in a hands-on tech training session"
 							fill
 							className="object-cover"
 						/>

@@ -58,12 +58,12 @@ const WhyUs = () => {
 				transition={{ duration: 0.6 }}
 				className="space-y-4 mb-12 text-center"
 			>
-				<h1 className="text-sm md:text-base font-bold text-assurify-orange uppercase tracking-wider">
+				<p className="text-sm md:text-base font-bold text-assurify-orange uppercase tracking-wider">
 					WHY CHOOSE US?
-				</h1>
-				<p className="text-2xl md:text-5xl font-bold text-[#333333]">
-					Get Started With Us Today
 				</p>
+				<h2 className="text-2xl md:text-5xl font-bold text-[#333333]">
+					Get Started With Us Today
+				</h2>
 			</motion.div>
 
 			<motion.div

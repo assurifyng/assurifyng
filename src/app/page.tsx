@@ -9,15 +9,17 @@ import WhyUs from "@/components/sections/WhyUs";
 
 export default function Home() {
 	return (
-		<main className="h-auto w-full flex flex-col">
+		<div className="h-auto w-full flex flex-col">
 			<Header />
-			<Hero />
-			<Courses />
-			<AboutUs />
-			<WhyUs />
-			<FAQs />
-			<ContactUs />
+			<main>
+				<Hero />
+				<Courses />
+				<AboutUs />
+				<WhyUs />
+				<FAQs />
+				<ContactUs />
+			</main>
 			<Footer />
-		</main>
+		</div>
 	);
 }

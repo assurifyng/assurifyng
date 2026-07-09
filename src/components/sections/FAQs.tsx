@@ -8,9 +8,9 @@ export default function FaQs() {
 				id="faqs"
 				className="w-full bg-[#FFF8F6] px-8 md:px-40 py-10 md:py-20 text-black"
 			>
-				<h1 className="text-2xl md:text-4xl font-semibold text-assurify-orange">
+				<h2 className="text-2xl md:text-4xl font-semibold text-assurify-orange">
 					Frequently Asked Questions
-				</h1>
+				</h2>
 				<p className="mt-5 text-sm md:text-lg">
 					Find answers to your most pressing questions about our
 					training services and processes.
