@@ -1,10 +1,10 @@
-import { COURSE_DATA } from "@/data";
+import { COURSE_DATA, type Course } from "@/data";
 import { sameAsLinks, siteConfig } from "@/lib/siteConfig";
 
 const orgId = `${siteConfig.url}/#organization`;
 const websiteId = `${siteConfig.url}/#website`;
 
-const organization = {
+export const organization = {
 	"@type": ["Organization", "EducationalOrganization"],
 	"@id": orgId,
 	name: siteConfig.name,
@@ -50,7 +50,7 @@ const organization = {
 	},
 };
 
-const website = {
+export const website = {
 	"@type": "WebSite",
 	"@id": websiteId,
 	url: siteConfig.url,
@@ -60,18 +60,29 @@ const website = {
 	inLanguage: "en",
 };
 
-const courses = COURSE_DATA.filter((course) => !course.isComingSoon).map(
-	(course) => ({
+export const siteGraph = {
+	"@context": "https://schema.org",
+	"@graph": [organization, website],
+};
+
+export function buildCourseSchema(course: Course) {
+	return {
+		"@context": "https://schema.org",
 		"@type": "Course",
 		name: course.title,
-		description: course.description,
-		url: `${siteConfig.url}/#courses`,
-		provider: { "@id": orgId },
+		description: course.metaDescription,
+		url: `${siteConfig.url}/courses/${course.slug}`,
+		provider: {
+			"@type": "Organization",
+			"@id": orgId,
+			name: siteConfig.name,
+			url: siteConfig.url,
+		},
 		inLanguage: "en",
+		educationalLevel: course.level,
 		hasCourseInstance: {
 			"@type": "CourseInstance",
 			courseMode: ["online", "onsite"],
-			courseWorkload: "P8W",
 			location: {
 				"@type": "Place",
 				name: `${siteConfig.name}, ${siteConfig.address.locality}`,
@@ -83,10 +94,21 @@ const courses = COURSE_DATA.filter((course) => !course.isComingSoon).map(
 				},
 			},
 		},
-	}),
-);
+	};
+}
 
-const faqEntries: { question: string; answer: string }[] = [
+export const coursesItemList = {
+	"@context": "https://schema.org",
+	"@type": "ItemList",
+	itemListElement: COURSE_DATA.map((course, index) => ({
+		"@type": "ListItem",
+		position: index + 1,
+		url: `${siteConfig.url}/courses/${course.slug}`,
+		name: course.title,
+	})),
+};
+
+export const faqEntries: { question: string; answer: string }[] = [
 	{
 		question: "How do I apply?",
 		answer: "Applying is simple. Submit your application online through our registration form and our team will review your submission and get back to you promptly with next steps.",
@@ -117,9 +139,10 @@ const faqEntries: { question: string; answer: string }[] = [
 	},
 ];
 
-const faqPage = {
+export const faqPage = {
+	"@context": "https://schema.org",
 	"@type": "FAQPage",
-	"@id": `${siteConfig.url}/#faq`,
+	"@id": `${siteConfig.url}/faqs#faq`,
 	mainEntity: faqEntries.map((entry) => ({
 		"@type": "Question",
 		name: entry.question,
@@ -130,7 +153,15 @@ const faqPage = {
 	})),
 };
 
-export const structuredData = {
-	"@context": "https://schema.org",
-	"@graph": [organization, website, ...courses, faqPage],
-};
+export function buildBreadcrumb(items: { name: string; path: string }[]) {
+	return {
+		"@context": "https://schema.org",
+		"@type": "BreadcrumbList",
+		itemListElement: items.map((item, index) => ({
+			"@type": "ListItem",
+			position: index + 1,
+			name: item.name,
+			item: `${siteConfig.url}${item.path}`,
+		})),
+	};
+}

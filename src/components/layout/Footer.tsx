@@ -48,10 +48,13 @@ const Footer = () => {
 					<p className="font-semibold text-2xl">Help</p>
 
 					<div className="mt-3  flex flex-col gap-4">
-						<Link href={"/#contact-us"} className="hover:underline">
+						<Link href={"/about"} className="hover:underline">
+							About Us
+						</Link>
+						<Link href={"/contact"} className="hover:underline">
 							Contact Us
 						</Link>
-						<Link href={"/#faqs"} className="hover:underline">
+						<Link href={"/faqs"} className="hover:underline">
 							FAQs
 						</Link>
 					</div>
@@ -60,9 +63,16 @@ const Footer = () => {
 					<p className="font-semibold text-2xl">Our Courses</p>
 
 					<div className="mt-3  flex flex-col gap-4">
-						<Link href={"/#courses"}>Cyber Security</Link>
-						<Link href={"/#courses"}>Software Testing</Link>
-						<Link href={"/#courses"}>Web Development</Link>
+						<Link href={"/courses/cybersecurity"}>
+							Cyber Security
+						</Link>
+						<Link href={"/courses/software-qa-testing"}>
+							Software Testing
+						</Link>
+						<Link href={"/courses/web-development"}>
+							Web Development
+						</Link>
+						<Link href={"/courses"}>All Courses</Link>
 					</div>
 				</div>
 				<div className="mt-4 md:mt-8">

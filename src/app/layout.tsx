@@ -3,7 +3,9 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "sonner";
 import { siteConfig } from "@/lib/siteConfig";
-import { structuredData } from "@/lib/structuredData";
+import { siteGraph } from "@/lib/structuredData";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
 
 const poppins = Poppins({
 	variable: "--font-poppins",
@@ -84,12 +86,14 @@ export default function RootLayout({
 				<script
 					type="application/ld+json"
 					dangerouslySetInnerHTML={{
-						__html: JSON.stringify(structuredData),
+						__html: JSON.stringify(siteGraph),
 					}}
 				/>
 			</head>
 			<body className={`${poppins.variable} antialiased`}>
+				<Header />
 				{children}
+				<Footer />
 				<Toaster position="top-right" richColors />
 			</body>
 		</html>

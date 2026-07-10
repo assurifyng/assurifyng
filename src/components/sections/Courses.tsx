@@ -39,14 +39,17 @@ const Courses = () => {
 								className="basis-full md:basis-1/2 lg:basis-1/3"
 							>
 								<div className="bg-white border border-gray-300 hover:border-assurify-orange cursor-pointer rounded-[32px] p-5  hover:shadow-md transition-shadow h-full flex flex-col">
-									<div className="relative aspect-video w-full mb-6 overflow-hidden rounded-2xl">
+									<Link
+										href={`/courses/${course.slug}`}
+										className="relative aspect-video w-full mb-6 overflow-hidden rounded-2xl block"
+									>
 										<Image
 											src={course.image}
-											alt={course.title}
+											alt={`${course.title} training at GoAssurify`}
 											fill
-											className="object-cover"
+											className="object-cover transition-transform duration-300 hover:scale-105"
 										/>
-									</div>
+									</Link>
 
 									<div className="flex gap-2 mb-4">
 										<Badge className="bg-assurify-orange hover:bg-assurify-orange text-white px-4 py-1.5 rounded-full font-medium border-none whitespace-nowrap">
@@ -55,9 +58,11 @@ const Courses = () => {
 									</div>
 
 									<div className="space-y-3 grow">
-										<h3 className="text-2xl font-bold text-[#111] leading-tight">
-											{course.title}
-										</h3>
+										<Link href={`/courses/${course.slug}`}>
+											<h3 className="text-2xl font-bold text-[#111] leading-tight hover:text-assurify-orange transition-colors">
+												{course.title}
+											</h3>
+										</Link>
 										<p className="text-gray-600 leading-relaxed">
 											{course.description}
 										</p>
